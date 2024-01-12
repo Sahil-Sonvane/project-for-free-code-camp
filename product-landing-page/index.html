@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumkumadi Oil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+      <div class="logo">
+          <a href="#hero"> <img src="https://sosoapy.in/wp-content/uploads/2022/07/cropped-slogo.png" alt="sosoapy logo" id="header-img"></a> 
+
+      </div>
+        <nav id="nav-max">
+            <ul>
+                <li><a class="nav-link" href="#about">About Oil</a></li>
+                <li><a class="nav-link" href="#howtouse">How To Use</a></li>
+                <li><a class="nav-link" href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#about">About Oil</a></li>
+                <li><a class="nav-link" href="#howtouse">How To Use</a></li>
+                <li><a class="nav-link" href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+        <span class="hamburger">&#8801;</span>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <div class="text">
+                <h3>Introducing</h3> 
+                <h1>KumKumadi Oil</h1>
+                <p>--Give your skin glow like Gold</p>
+                <button><a href="#about" class="btn">Know More</a></button>
+            </div>
+
+            <div class="product-image">
+                <img src="images/kumkumadi-oil.png" alt="Kumkumadi oil Photo">
+
+            </div>
+            
+        </section>
+        <section class="hero2" id="about">
+            <div class="product">
+                <img src="https://sosoapy.in/wp-content/uploads/2023/07/Blue-Clean-Skincare-Product-Instagram-Post.png"
+                    alt="Kumkumadi oil Photo">
+            </div>
+            <div class="product_desc">
+                <h2>KumKumadi Oil</h2>
+                <h3>Glow Like Gold</h3>
+                <p>&#8377<span> 499.00</span></p>
+                <p>The magical potion KUMKUMADI OIL which is also used as a moisturizer is suitable for almost every
+                    skin type and best works for dry, flaky skin. The oil is a wonderful blend of plant, flower, fruit,
+                    and milk extracts which makes it the magical oil for pure skin.</p>
+                <ul>
+                    <li>Helps over pigmentation and dark spots.</li>
+                    <li>Work best for skin brightening and lighting.</li>
+                    <li>Tone your skin by providing the correct cell formation.</li>
+                    <li>Can be used by anyone, of any skin type.</li>
+                </ul>
+                <button>Buy Now</button>
+            </div>
+        </section>
+
+        <section id="howtouse">
+
+            <div class="howtousetext">
+                <h3>How to Use</h3>
+                <p><span>Step: 1 </span>Wash face, pat dry.</p>
+                <p><span>Step: 2 </span>Gently massage 2-3 drops of Vasu Kumkumadi Tailam over face and neck till it
+                    gets absorbed.</p>
+                <p><span>Step: 3 </span>For best results, allow the application to remain overnight.</p>
+                <p>For More information You Can watch the video tutorial.</p>
+            </div>
+
+            <div class="howtousevideo" >
+                <iframe width="560" id="video" height="315" src="https://www.youtube.com/embed/o8RxBfvqwN0?si=z9ZZxwG_klPBV4MD"
+                   title="YouTube video player" frameborder="0"
+                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                   allowfullscreen></iframe>                
+           </div>
+            
+        </section>
+       
+        <section class="newsletter">
+            <div class="container">
+              <h2>Subscribe to Our Newsletter</h2>
+              <p>Stay up-to-date with our latest news and updates.</p>
+            </div>
+              <form id= "form" action="https://www.freecodecamp.com/email-submit" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+                <input id="submit" type="submit"></input>
+              </form>
+            
+          </section>
+        <section class="footer" id="footer">
+            <p>Design and developed for FreeCodeCamp</p>
+        </section>
+    </main>
+
+<script>
+let Hamburger = document.querySelector(".hamburger");
+let navBar = document.querySelector("#nav-bar");
+
+Hamburger.addEventListener("click", function(){
+
+    if(navBar.style.visibility == "hidden"){
+        navBar.style.visibility = "visible";
+        navBar.style.height = "250px";
+        Hamburger.innerHTML = "&#10006;"
+        
+        Hamburger.style.transform = "rotate(13deg)"
+        Hamburger.style.transition = "transform 0.1s linear";
+
+
+    }
+    else {
+
+        Hamburger.innerHTML = "&#8801;"
+        Hamburger.style.transform = "rotate(0deg)"
+        Hamburger.style.transition = "transform 0.1s linear";
+
+        // navBar.classList.add("remove-menu");
+
+        navBar.style.visibility = "hidden";
+        navBar.style.height = "0";
+    }
+
+})
+
+</script>
+
+
+</body>
+
+</html>

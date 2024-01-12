@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Career Intrest Survey</title>
+</head>
+
+<body>
+    <h1 id="title">Career Intrest Survey</h1>
+    <p id="description">Complete our Career Interest Survey to help you find the career best suited for you, based on
+        your personal profile. This will help us evaluate your opportunities and give you an informative report.</p>
+    <form  id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Enter Your Full Name: <input type="text" placeholder="Full Name" required id="name"> </label>
+            <label id="email-label" for="email">Enter Your Email Address: <input type="email" placeholder="Enter Your Email" required id="email"> </label>
+            <label id="number-label" for="number-label">Enter Your Age: <input type="number"  id="number" placeholder="Your Age" min="16"
+                    max="30"> </label>
+            <label for="gender">Your Gender: <input type="radio" class="inline" value="male" name="gender"> Male  
+                <input type="radio" value="female" name="gender" class="inline"> Female </label>
+        </fieldset>
+        <fieldset>
+            <label for="current-role">Which option best describes your current role?
+                <select name="current-role" id="dropdown">
+                    <option value="">Select any One</option>
+                    <option value="Student">Student</option>
+                    <option value="full-time-job">Full Time Job</option>
+                    <option value="part-time-job">Part Time Job</option>
+                    <option value="prefer-not-to-say">Prefer Not to Say</option>
+                    <option value="Other">Other</option>
+                </select></label>
+            <label for="career">What are your career goals as of now? <textarea name="career-goal" id="career" cols="30"
+                    rows="3"></textarea></label>
+            <h3>If you had the chance to change your current career field, would you do it?</h3>
+            <label for="yes"> <input type="radio" class="inline" id="yes" value="yes" name="change-career"> Yes </label>
+            <label for="no"> <input type="radio" class="inline" id="no" value="no" name="change-career"> No
+            </label>
+        </fieldset>
+        <fieldset>
+
+            <h3>Fields you are interested in: </h3>
+            <div class="block">
+                <label for="Mathematics"><input type="checkbox" value="mathematics" class="inline" id="Mathematics"> Mathematics</label>
+                <label for="IT Programming"><input type="checkbox" value="it-programming" class="inline" id="IT Programming"> IT
+                    Programming</label>
+                <label for="Politics"><input type="checkbox" class="inline" value="politics" id="Politics"> Politics</label>
+                <label for="Marketing"><input type="checkbox" class="inline" value ="Marketing" id="Marketing"> Marketing</label>
+                <label for="Journalism"><input type="checkbox" class="inline" value="journalism" id="Journalism"> Journalism</label>
+            </div>
+            <div class="block2">
+                <label for="Agriculture"><input type="checkbox" class="inline" value="agriculture" id="Agriculture"> Agriculture</label>
+                <label for="Law"><input type="checkbox" class="inline" value="law" id="Law"> Law</label>
+                <label for="Education"><input type="checkbox" class="inline" value="education" id="Education"> Education</label>
+                <label for="Business"><input type="checkbox" class="inline" value="business" id="Business"> Business</label>
+                <label for="Psychology"><input type="checkbox" class="inline" value="psychology" id="Psychology"> Psychology</label>
+            </div>
+
+            <h3>Personal qualities: </h3>
+            <div class="block">
+                <label for="Fast learner"><input type="checkbox" class="inline" value="fast-learner" id="Fast learner"> Fast learner</label>
+                <label for="Organized "><input type="checkbox" class="inline" value="organized" id="Organized "> Organized</label>
+                <label for="Tenacious"><input type="checkbox" class="inline" value="tenacious" id="Tenacious"> Tenacious</label>
+                <label for="Creative"><input type="checkbox" class="inline" value="creative" id="Creative"> Creative</label>
+                <label for="Communicative"><input type="checkbox" value="communicative" class="inline" id="Communicative">
+                    Communicative</label>
+            </div>
+            <div class="block2">
+                <label for="Self-educated"><input type="checkbox" value="self-educated" class="inline" id="Self-educated">
+                    Self-educated</label>
+                <label for="Self-motivated"><input type="checkbox" value="self-motivated" class="inline" id="Self-motivated">
+                    Self-motivated</label>
+                <label for="Methodical"><input type="checkbox" value="methodical" class="inline" id="Methodical"> Methodical</label>
+                <label for="Competitive"><input type="checkbox" value="competitive" class="inline" id="Competitive"> Competitive</label>
+                <label for="Decision maker"><input type="checkbox" value="decision-maker" class="inline" id="Decision maker"> Decision
+                    maker</label>
+            </div>
+
+            <h3>Hobbies: </h3>
+            <div class="block">
+                <label for="Fishing"><input type="checkbox" class="inline" value="fishing" id="Fishing"> Fishing</label>
+                <label for="Gardening "><input type="checkbox" class="inline" value="gardening" id="Gardening "> Gardening</label>
+                <label for="Painting"><input type="checkbox" class="inline" value="painting" id="Painting"> Painting</label>
+                <label for="Mountain hiking"><input type="checkbox" class="inline" value="mountain-hiking" id="Mountain hiking"> Mountain
+                    hiking</label>
+                <label for="Dancing"><input type="checkbox" class="inline" value="dancing" id="Dancing"> Dancing</label>
+            </div>
+            <div class="block2">
+                <label for="Cooking"><input type="checkbox" class="inline" value="cooking" id="Cooking"> Cooking</label>
+                <label for="Programming"><input type="checkbox" class="inline" value="programming" id="Programming"> Programming</label>
+                <label for="Listening to music"><input type="checkbox" value="music" class="inline" id="Listening to music"> Listening
+                    to music</label>
+                <label for="Playing video games"><input type="checkbox" value="games" class="inline" id="Playing video games"> Playing
+                    video games</label>
+                <label for="Networking"><input type="checkbox" value="networking" class="inline" id="Networking"> Networking</label>
+            </div>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+
+</html>

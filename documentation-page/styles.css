@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span{
+    display: none;
+}
+
+#navbar {
+    min-width: 290px;
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: 2px solid #808080;
+
+}
+
+#main-doc {
+  position: absolute;    
+  margin-left: 310px;
+  padding: 20px;
+  padding-top: 0;
+
+}
+
+nav header {
+    padding: 40px 0;
+    border-right: #808080 solid 2px;
+    text-align: center;
+}
+
+nav header a {
+
+    color: #272728;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-size: 1.6rem;
+    cursor: pointer;
+
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #4d4e53;
+
+}
+
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: #808080 solid 1px;
+    padding: 10px;
+
+}
+
+.fst {
+    border-top: #808080 solid 1px;
+}
+
+nav ul li:hover {
+
+    color: #000000;
+    background-color: rgba(119, 120, 128, 0.389);
+}
+
+
+.main-section header{
+    margin: 40px  22px 0;
+    letter-spacing: 1px;
+    color: #272728;
+    font-size: 1.8rem;
+    
+}
+
+.main-section article {
+    margin: 30px 0;
+
+}
+
+.main-section p {
+    font-size: 0.96rem;
+    color: #4d4e53;
+    margin: 10px 0;
+}
+
+.main-section ul {
+    margin: 20px 0 10px 30px;
+    color: #4d4e53;
+    font-size: 0.96rem;
+}
+
+.main-section img {
+    width: 350px;
+    margin: 10px auto;
+    display: block;
+    border: #808080 solid 1px;
+    border-radius: 10px;
+    padding: 20px;
+}
+code{
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+   
+      span{
+        position: absolute;
+        left: 30px;
+        top: 0;
+        font-size: 32px;
+        display: block;
+      }
+      .main-section header{
+        text-align: center;
+      }
+    
+    #navbar {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: -450px;
+        padding: 0;
+        margin: 0;
+        width: 60%;
+        height: auto;
+        transition: left 0.3s linear;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+      }
+    
+      #main-doc {
+        position: relative;
+        margin-left: 0px;
+        
+      }
+
+      #close{
+        position: absolute;
+        top: 5px;
+        left:30px ;
+      }
+    }
