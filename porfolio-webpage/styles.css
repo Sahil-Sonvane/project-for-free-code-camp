@@ -94,7 +94,7 @@ nav ul li a:hover {
   color: rgb(186, 186, 186);
 }
 .project-tile {
-  padding: 100px auto;
+  padding: 100px 0;
   background-color: #5e716a;
 }
 .project-tile h2 {
@@ -110,7 +110,7 @@ nav ul li a:hover {
   justify-content: space-evenly;
 }
 .cards {
-  width: 30vw;
+  width: 100%;
   max-width: 400px;
   height: auto;
   border-radius: 12px;
