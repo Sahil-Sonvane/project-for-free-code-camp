@@ -54,7 +54,7 @@
 .project-grid{
     display: grid;
     gap: 20px;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3 ,1fr);
     padding: 100px 0;
 }
 
@@ -101,7 +101,7 @@
         width: 100%;
     }
     .project-grid{
-        grid-template-columns: auto;
+        grid-template-columns:repeat(1, 1fr);
         padding: 50px 20px;
     }
 
