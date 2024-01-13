@@ -117,9 +117,9 @@ Hamburger.addEventListener("click", function(){
     if(navBar.style.visibility == "hidden"){
         navBar.style.visibility = "visible";
         navBar.style.height = "250px";
-        Hamburger.innerHTML = "&#10006;"
-        
-        Hamburger.style.transform = "rotate(13deg)"
+        Hamburger.innerHTML = "&#10005;"
+        Hamburger.style.fontSize = "20px";
+        Hamburger.style.transform = "rotate(180deg)"
         Hamburger.style.transition = "transform 0.1s linear";
 
 
@@ -127,6 +127,8 @@ Hamburger.addEventListener("click", function(){
     else {
 
         Hamburger.innerHTML = "&#8801;"
+        Hamburger.style.fontSize = "40px";
+
         Hamburger.style.transform = "rotate(0deg)"
         Hamburger.style.transition = "transform 0.1s linear";
 

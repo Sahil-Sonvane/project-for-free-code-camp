@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     width: 100%;
@@ -73,3 +74,9 @@ section p {
 .tribute-link{
     text-align: center;
 }
+@media only screen and (max-width: 767px) {
+    .container {
+      width: 100%; 
+      padding: 10px;
+    }
+  }
