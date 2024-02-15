@@ -22,19 +22,67 @@
           designing and coding web pages that adapt to different screen sizes
           and devices.
         </p>
-        <div>
-          <a href="https://github.com/Sahil-Sonvane" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/sahil-sonvane/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://www.freecodecamp.org/fcc2ccbca07-bac6-492c-acb7-cd4022c6eaf8" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+        <div class="icons">
+          <div class="icon-box">
+            <a href="https://github.com/Sahil-Sonvane" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <div class="icon-box">
+            <a href="https://www.linkedin.com/in/sahil-sonvane/" target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+          <div class="icon-box">
+            <a
+              href="https://www.freecodecamp.org/fcc2ccbca07-bac6-492c-acb7-cd4022c6eaf8"
+              target="_blank"
+              ><i class="fa-brands fa-free-code-camp"></i
+            ></a>
+          </div>
         </div>
+        <label class="ui-switch">
+          <input id="switch-btn" type="checkbox" />
+          <div class="slider">
+            <div class="circle"></div>
+          </div>
+        </label>
       </div>
 
-      <div class="project-grid">
-        
-      </div>
+      <div class="project-grid"></div>
     </div>
 
     <script>
+      const switchBtn = document.getElementById("switch-btn");
+
+      if(localStorage.getItem("theme") == null){
+        localStorage.setItem("theme", "dark");
+      }
+
+      let localData = localStorage.getItem("theme");
+
+      
+      if(localData == "dark"){
+        document.body.classList.add("dark-mode");
+        switchBtn.checked = true;
+      }else if(localData == "light"){
+        document.body.classList.remove("dark-mode");
+        switchBtn.checked = false;
+      }
+
+
+      switchBtn.addEventListener("change", (e) => {
+        if (e.currentTarget.checked) {
+          document.body.classList.add("dark-mode");
+          localStorage.setItem("theme", "dark");
+
+        } else {
+          document.body.classList.remove("dark-mode");
+          localStorage.setItem("theme", "light");
+
+        }
+      });
+
       const projects = [
         {
           name: "Portfolio Webpage",
@@ -44,13 +92,15 @@
         },
         {
           name: "A Tribute Page",
-          image: "https://img.icons8.com/external-topaz-kerismaker/512/external-Tribute-award-topaz-kerismaker.png",
+          image:
+            "https://img.icons8.com/external-topaz-kerismaker/512/external-Tribute-award-topaz-kerismaker.png",
           link: "/projects-for-fcc/a-tribute-page/",
           code: "https://github.com/Sahil-Sonvane/project-for-free-code-camp/tree/main/a-tribute-page",
         },
         {
           name: "Product Landing Page",
-          image: "https://img.icons8.com/external-flaticons-flat-flat-icons/512/external-product-e-commerce-flaticons-flat-flat-icons-2.png",
+          image:
+            "https://img.icons8.com/external-flaticons-flat-flat-icons/512/external-product-e-commerce-flaticons-flat-flat-icons-2.png",
           link: "/projects-for-fcc/product-landing-page/",
           code: "https://github.com/Sahil-Sonvane/project-for-free-code-camp/tree/main/product-landing-page",
         },
@@ -71,15 +121,15 @@
           image: "https://img.icons8.com/fluency/240/survey.png",
           link: "/projects-for-fcc/survey-form/",
           code: "https://github.com/Sahil-Sonvane/project-for-free-code-camp/tree/main/survey-form",
-        }
+        },
       ];
-let projectGrid = document.querySelector(".project-grid");
+      let projectGrid = document.querySelector(".project-grid");
       projects.forEach((data) => {
         let projectName = data.name;
         let Image = data.image;
         let Link = data.link;
         let Code = data.code;
-        
+
         projectGrid.innerHTML += `<div class="cards">
           <img
             src="${Image}"
@@ -94,9 +144,7 @@ let projectGrid = document.querySelector(".project-grid");
               >View Code</a
             >
           </div>
-        </div>`
-
-
+        </div>`;
       });
     </script>
   </body>
