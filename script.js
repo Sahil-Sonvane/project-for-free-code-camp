@@ -33,39 +33,39 @@ const projects = [
     name: "Portfolio Webpage",
     image: "https://img.icons8.com/nolan/512/1A6DFF/C822FF/resume.png",
     link: "/projects-for-fcc/portfolio-webpage/",
-    code: "https://github.com/sahilsonvane/project-for-free-code-camp/tree/main/portfolio-webpage",
+    code: "https://github.com/sahilsonvane/projects-for-fcc/tree/main/portfolio-webpage",
   },
   {
     name: "A Tribute Page",
     image:
       "https://img.icons8.com/external-topaz-kerismaker/512/external-Tribute-award-topaz-kerismaker.png",
     link: "/projects-for-fcc/a-tribute-page/",
-    code: "https://github.com/sahilsonvane/project-for-free-code-camp/tree/main/a-tribute-page",
+    code: "https://github.com/sahilsonvane/projects-for-fcc/tree/main/a-tribute-page",
   },
   {
     name: "Product Landing Page",
     image:
       "https://img.icons8.com/external-flaticons-flat-flat-icons/512/external-product-e-commerce-flaticons-flat-flat-icons-2.png",
     link: "/projects-for-fcc/product-landing-page/",
-    code: "https://github.com/sahilsonvane/project-for-free-code-camp/tree/main/product-landing-page",
+    code: "https://github.com/sahilsonvane/projects-for-fcc/tree/main/product-landing-page",
   },
   {
     name: "Penguin Scenery by Css",
     image: "https://img.icons8.com/bubbles/500/pinguin.png",
     link: "/projects-for-fcc/penguin/",
-    code: "https://github.com/sahilsonvane/project-for-free-code-camp/tree/main/penguin",
+    code: "https://github.com/sahilsonvane/projects-for-fcc/tree/main/penguin",
   },
   {
     name: "Documentation Page",
     image: "https://img.icons8.com/nolan/512/view.png",
     link: "/projects-for-fcc/documentation-page/",
-    code: "https://github.com/sahilsonvane/project-for-free-code-camp/tree/main/documentation-page",
+    code: "https://github.com/sahilsonvane/projects-for-fcc/tree/main/documentation-page",
   },
   {
     name: "Survey Form",
     image: "https://img.icons8.com/fluency/240/survey.png",
     link: "/projects-for-fcc/survey-form/",
-    code: "https://github.com/sahilsonvane/project-for-free-code-camp/tree/main/survey-form",
+    code: "https://github.com/sahilsonvane/projects-for-fcc/tree/main/survey-form",
   },
 ];
 let projectGrid = document.querySelector(".project-grid");
